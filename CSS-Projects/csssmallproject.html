@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Small CSS Animation Project</title>
+</head>
+<style type="text/css">
+
+    @import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
+    body{
+        font-family: 'Pattaya', sans-serif;
+        background: #ffffff;
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 0;
+        overflow: hidden;
+
+        animation-name: bgani;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    ul{
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    ul li{
+        color: #ffffff;
+        list-style-type: none;
+        font-size: 50px;
+        letter-spacing: 10px;
+
+        animation-name: myani;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes myani {
+        0%{
+            color: #05fa19;
+            text-shadow: 0 0 7px deepskyblue;
+            opacity: 0;
+            letter-spacing: -10px;
+        }
+
+        25%{
+            color: red;
+            text-shadow: 0 0 7px red, 0 0 50px orangered;
+            opacity: 0.25;
+            letter-spacing: 3px;
+        }
+
+        50%{
+            color: #89cff0;
+            text-shadow: 0 0 7px darkblue;
+            opacity: 0.5;
+            letter-spacing: 5px;
+        }
+
+        75%{
+            color: yellow;
+            text-shadow: 0 0 10px hotpink;
+            opacity: 0.75;
+            letter-spacing: 7px;
+        }
+
+        100%{
+            color: orangered;
+            text-shadow: 0 0 7px purple;
+            opacity: 1;
+            letter-spacing: 10px;
+        }
+    }
+
+    ul li:nth-child(1){
+        animation-delay: 0s;
+    }
+
+    ul li:nth-child(2){
+        animation-delay: 0.1s;
+    }
+
+    ul li:nth-child(3){
+        animation-delay: 0.2s;
+    }
+
+    ul li:nth-child(4){
+        animation-delay: 0.3s;
+    }
+
+    ul li:nth-child(5){
+        animation-delay: 0.4s;
+    }
+
+    ul li:nth-child(6){
+        animation-delay: 0.5s;
+    }
+
+    ul li:nth-child(7){
+        animation-delay: 0.6s;
+    }
+
+    ul li:nth-child(8){
+        animation-delay: 0.7s;
+    }
+    ul li:nth-child(9){
+        animation-delay: 0.8s;
+    }
+    ul li:nth-child(10){
+        animation-delay: 0.9s;
+    }
+
+    @keyframes bgani {
+        0%{
+            background-color: #ffffff;
+        }
+
+        100%{
+            background-color: black;
+        }
+    }
+</style>
+<body>
+    <ul>
+        <li>L</li>
+        <li>O</li>
+        <li>A</li>
+        <li>D</li>
+        <li>I</li>
+        <li>N</li>
+        <li>G</li>
+        <li>.</li>
+        <li>.</li>
+        <li>.</li>
+    </ul>
+</body>
+</html>
